@@ -9,6 +9,9 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #f9f9f9;
+    background-image: url('./assets/1.png');
+    background-size: cover;
+    background-position: center;
     animation: fadeIn 1s ease-out;
 }
 
@@ -56,6 +59,7 @@ body > a:hover {
     border-radius: 8px;
     text-align: center;
     animation: bounceIn 1s ease-out;
+    position: relative;
 }
 
 @keyframes bounceIn {
@@ -137,6 +141,10 @@ body > a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
     animation: zoomIn 0.8s ease-out;
+    background-image: url('path/to/your/button-icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px; /* Adjust to make room for icon */
 }
 
 @keyframes zoomIn {
@@ -176,6 +184,9 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
     animation: fadeIn 2s ease-out;
+    background-image: url('path/to/footer-background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 footer p {
@@ -216,4 +227,5 @@ footer a:hover {
         padding: 0.6rem 1.2rem;
     }
 }
+
 
