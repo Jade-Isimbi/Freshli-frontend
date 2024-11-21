@@ -1,11 +1,10 @@
-/* General Reset */
+/* Common Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     color: #333;
@@ -25,39 +24,6 @@ body > a:hover {
     text-decoration: underline;
     color: #005f4a;
     transform: scale(1.05);
-}
-
-/* Header */
-header {
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-}
-
-header nav ul li a.active,
-header nav ul li a:hover {
-    background-color: #B6D7D1;
-    border-radius: 5px;
 }
 
 /* Hero Section */
@@ -85,9 +51,7 @@ header nav ul li a:hover {
     z-index: 1;
 }
 
-#hero h1,
-#hero p,
-#hero button {
+#hero h1, #hero p, #hero button {
     position: relative;
     z-index: 2;
     animation: fadeInUp 1s ease forwards;
@@ -135,103 +99,6 @@ header nav ul li a:hover {
     display: block;
 }
 
-/* About Section */
-#about {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-#about h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: #008080;
-}
-
-#about p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-#services, #about-us, #contact-us {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 2rem;
-}
-
-#services h1, #about-us h1, #contact-us h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #008080;
-}
-
-#services .service-item, #about-us h2, #about-us p, #contact-us p, #contact-us form {
-    margin-bottom: 1.5rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-#contact-us .form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-#contact-us .form-group label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-#contact-us .form-group input, #contact-us .form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contact-us .form-group input:focus, #contact-us .form-group textarea:focus {
-    border-color: #0D7C66;
-    box-shadow: 0 0 5px rgba(13, 124, 102, 0.5);
-}
-
-#contact-us .btn {
-    background-color: #007acc;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#contact-us .btn:hover {
-    background-color: #005ea2;
-    transform: translateY(-2px);
-}
-
-#contact-us .btn:active {
-    transform: translateY(2px);
-}
-
-
 /* Footer */
 footer {
     background-color: #333;
@@ -258,7 +125,7 @@ footer {
 }
 
 .modal-content {
-    background: #fff;
+    background: #ffffff;
     padding: 2.5rem;
     text-align: center;
     border-radius: 12px;
@@ -271,7 +138,7 @@ footer {
     display: block;
     margin: 1rem 0;
     background-color: #007acc;
-    color: #fff;
+    color: white;
     padding: 0.75rem;
     text-decoration: none;
     border-radius: 8px;
@@ -322,7 +189,7 @@ footer {
     }
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (min-width: 768px) {
     #hero h1 {
         font-size: 3.5rem;
