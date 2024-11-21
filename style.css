@@ -1,11 +1,11 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     color: #333;
@@ -27,7 +27,7 @@ body > a:hover {
     transform: scale(1.05);
 }
 
-/* Header */
+
 header {
     background-color: white;
     color: #fff;
@@ -60,7 +60,7 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section */
+
 #hero {
     position: relative;
     height: 80vh;
@@ -135,7 +135,7 @@ header nav ul li a:hover {
     display: block;
 }
 
-/* About Section */
+
 #about {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -232,7 +232,7 @@ header nav ul li a:hover {
 }
 
 
-/* Footer */
+
 footer {
     background-color: #333;
     color: #f2f2f2;
@@ -242,7 +242,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -301,7 +301,7 @@ footer {
     transform: scale(1.05);
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -322,7 +322,7 @@ footer {
     }
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
     #hero h1 {
         font-size: 3.5rem;
