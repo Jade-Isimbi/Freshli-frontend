@@ -1,15 +1,16 @@
-
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
-    font-family: 'Roboto', Arial, sans-serif; 
+    font-family: 'Roboto', Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
 
 body > a {
@@ -26,11 +27,44 @@ body > a:hover {
     transform: scale(1.05);
 }
 
+/* Header */
+header {
+    background-color: white
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background-color: #B6D7D1;
+    border-radius: 5px;
+}
+
+/* Hero Section */
 #hero {
     position: relative;
     height: 80vh;
-    background: url('./assets/1.png') center/cover no-repeat; 
+    background: url('1.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,18 +81,20 @@ body > a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-#hero h1, #hero p, #hero button {
+#hero h1,
+#hero p,
+#hero button {
     position: relative;
     z-index: 2;
     animation: fadeInUp 1s ease forwards;
 }
 
 #hero h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem); 
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
     color: #00aaff;
 }
@@ -76,7 +112,7 @@ body > a:hover {
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 8px; 
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
@@ -99,13 +135,13 @@ body > a:hover {
     display: block;
 }
 
-
+/* About Section */
 #about {
     padding: 2rem 1rem;
     max-width: 800px;
     margin: auto;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -122,7 +158,7 @@ body > a:hover {
     line-height: 1.8;
 }
 
-
+/* Footer */
 footer {
     background-color: #333;
     color: #f2f2f2;
@@ -132,7 +168,7 @@ footer {
     font-size: 0.9rem;
 }
 
-
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -148,7 +184,7 @@ footer {
 }
 
 .modal-content {
-    background: #ffffff;
+    background: #fff;
     padding: 2.5rem;
     text-align: center;
     border-radius: 12px;
@@ -161,7 +197,7 @@ footer {
     display: block;
     margin: 1rem 0;
     background-color: #007acc;
-    color: white;
+    color: #fff;
     padding: 0.75rem;
     text-decoration: none;
     border-radius: 8px;
@@ -191,6 +227,7 @@ footer {
     transform: scale(1.05);
 }
 
+/* Animations */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -211,7 +248,7 @@ footer {
     }
 }
 
-
+/* Responsive Design */
 @media (min-width: 768px) {
     #hero h1 {
         font-size: 3.5rem;
