@@ -4,30 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - FRESHLi</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="services.html" >Services</a></li>
-                <li><a href="about.html" >About Us</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Have questions or want to get in touch? Reach out to us via the contact form below or through our email.</p>
+    <p>Have questions or want to get in touch? Feel free to contact us through the details below or send us a message.</p>
+
+   
+    <div class="contact-details">
+      <h3>Our Location</h3>
+      <p>FRESHLi Headquarters<br>123 Green Avenue, Kigali, Rwanda</p>
+    </div>
+
+    
+    <div class="contact-details">
+      <h3>Our Phone Numbers</h3>
+      <p>Customer Support: +250 123 456 789<br>Sales Inquiries: +250 987 654 321</p>
+    </div>
+
+    
+    <div class="contact-details">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="https://facebook.com/freshli" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com/freshli" target="_blank">Twitter</a> | 
+        <a href="https://instagram.com/freshli" target="_blank">Instagram</a>
+      </p>
+    </div>
+
+    
     <form action="#" method="post">
+      <h3>Ask a Question</h3>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea><br>
-      <button type="submit">Send Message</button>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="question">Your Question:</label>
+      <textarea id="question" name="question" placeholder="Type your question here..." required></textarea>
+
+      <button type="submit">Submit Question</button>
     </form>
   </section>
 
